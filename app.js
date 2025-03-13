@@ -1,11 +1,16 @@
-import { courses, getCourseByName, addCourse } from "./helper.js";
-import { v4 as uuidv4 } from "uuid";
+//app.js
 
+import express from "express"; //import the required package
+const app = express();
 
-addCourse("Node JS");
-addCourse("php JS");
-var nodecorse = getCourseByName("Node JS");
+app.get("/", (req, res) => {
+  res.send("<h1>Hello, World!</h1>");
+});
 
-console.log(nodecorse);
-console.log(courses);
-console.log(uuidv4());
+app.get("/taqi", (req, res) => {
+  res.send("Hello, taqi!");
+});
+
+app.listen(3000, () => {
+  console.log("Server running at http://localhost:3000");
+});
