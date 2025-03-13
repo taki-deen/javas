@@ -3,7 +3,7 @@ const courses = [];
 
 // 1. Get course by name
 function getCourseByName(courseName) {
-  return courses.find(course => course.courseName === courseName);
+  return courses.find((course) => course.courseName === courseName);
 }
 
 // 2. Add new course
@@ -11,7 +11,7 @@ function addCourse(name, duration, dateOfStarting) {
   const newCourse = {
     courseName: name,
     duration: duration,
-    dataofStarting: dateOfStarting // Note: property name matches the user's example
+    dataofStarting: dateOfStarting, // Note: property name matches the user's example
   };
   courses.push(newCourse);
 }
@@ -20,7 +20,6 @@ function addCourse(name, duration, dateOfStarting) {
 function addStudent(studentInfo) {
   students.push(studentInfo);
 }
-
 
 // Add a course
 addCourse("Node JS", "60H", "12-12-2025");
@@ -38,3 +37,4 @@ console.log(nodeCourse);
 
 // Add a student (example usage)
 addStudent({ name: "John Doe", studentId: 123 });
+//hjkgjkhfhjgf

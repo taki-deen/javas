@@ -20,3 +20,4 @@ function addCourse(courseName, duration, dateOfStarting) {
 // Example usage
 addCourse("node js", "60H", "12-12-2025");
 console.log(getCourseByName("node js"));
+// Function to add a new student
