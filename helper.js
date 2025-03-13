@@ -1,8 +1,5 @@
-// Arrays to store students and courses
-let students = [];
-let courses = [];
+const courses = [];
 
-// Function to get course by name
 function getCourseByName(courseName) {
   return courses.find((course) => course.courseName === courseName);
 }
@@ -17,7 +14,8 @@ function addCourse(courseName, duration, dateOfStarting) {
   courses.push(newCourse);
 }
 
-// Example usage
-addCourse("node js", "60H", "12-12-2025");
-console.log(getCourseByName("node js"));
-// Function to add a new student
+export default {
+  getCourseByName,
+  addCourse,
+  courses,
+};

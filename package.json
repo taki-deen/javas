@@ -1,0 +1,27 @@
+{
+  "name": "test-node",
+  "version": "1.0.0",
+  "description": "\"# Firstnoodjs\" \r \"# Firstnoodjs\" \r \"# Firstnoodjs\" \r \"# Firstnoodjs\"",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taki-deen/javas.git"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "taqi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/taki-deen/javas/issues"
+  },
+  "homepage": "https://github.com/taki-deen/javas#readme",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "uuid": "^11.1.0"
+  }
+}
